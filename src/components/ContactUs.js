@@ -1,7 +1,20 @@
-import "../App.css";
+import { useState } from "react";
 import NubeeroLogo from "./NubeeroLogo";
+import PrivacyPolicy from "./PrivacyPolicy";
+import TermsAndCondition from "./TermsAndCondition";
+import "../App.css";
 
 function ContactUs() {
+  const [privacy, setPrivacy] = useState(false);
+  const [terms, setTerms] = useState(false);
+
+  function handlePolicyClose() {
+    setPrivacy(false);
+  }
+  function handleTermsClose() {
+    setTerms(false);
+  }
+
   return (
     <>
       <div className="contact-container">
@@ -39,7 +52,19 @@ function ContactUs() {
           </div>
 
           <p>Nubeero is a consultancy and technology intermediation service provider that also offers services in software development</p>
-          <h3>Contact Us</h3>
+          <div className=" w-[900px] ">
+            <h3>
+              <span className=" cursor-pointer mr-[7px] hover:underline" onClick={() => setTerms(true)}>
+                Terms and Conditions
+              </span>
+              <span className="mr-[5px]">Contact us</span>
+
+              <span className=" cursor-pointer  hover:underline" onClick={() => setPrivacy(true)}>
+                {"  "}
+                Privacy Agreement
+              </span>
+            </h3>
+          </div>
           <div className="flex contact-footer-icon">
             <a href="https://web.facebook.com/nubeero?_rdc=1&_rdr" title="Facebook">
               <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,6 +110,8 @@ function ContactUs() {
           </div>
         </div>
       </div>
+      {privacy && <PrivacyPolicy handlePolicyClose={handlePolicyClose} />}
+      {terms && <TermsAndCondition handleTermsClose={handleTermsClose} />}
     </>
   );
 }

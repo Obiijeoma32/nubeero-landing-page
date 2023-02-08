@@ -22,7 +22,7 @@ function Option() {
               setBusiness(false);
               setIndividual(true);
             }}
-            className={`mt-12 ${individual === true && "border border-[#00325c] text-[#00325c]"} option-list`}
+            className={`mt-12 ${individual === true && "border border-[#0098db] text-[#0098db]"} option-list`}
           >
             <div className="option-icon">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@ function Option() {
               setIndividual(false);
               setBusiness(true);
             }}
-            className={`${business === true && "border border-[#00325c] text-[#00325c]"} option-list`}
+            className={`${business === true && "border border-[#0098db] text-[#0098db]"} option-list`}
           >
             <div className="option-icon">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">

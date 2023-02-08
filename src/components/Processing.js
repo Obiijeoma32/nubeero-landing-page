@@ -12,9 +12,9 @@ function Processing() {
     <>
       <Header />
       <div className="dashboard-container mb-[5%] ">
-        <div>
+        <div className="dashboard-intro">
           {" "}
-          <h1 className="text-[#00325c] text-[44px] w-[500px] mt-14">Resource Outsourcing & Resource Placement</h1>
+          <h1 className="text-[#00325c] text-[44px] w-[500px] ">Resource Outsourcing & Resource Placement</h1>
           <p className="text-[#0098db] w-[450px] text-[18px]">
             {" "}
             Outsource and place top talent for your organization to meet your business needs efficiently. Our team will help you find the right resources, whether it be short-term projects or long-term engagements.
@@ -24,7 +24,7 @@ function Processing() {
           </div>
         </div>
 
-        <img className="w-[488px] h-[488px] mr-[5%] " src={game} alt="world map" />
+        <img className="w-[488px] h-[488px] mr-[1%] " src={game} alt="world map" />
       </div>
       <PartnerIcon />
       <div>
@@ -35,9 +35,9 @@ function Processing() {
           </div>
           <div className="flex services-body1 ">
             <div className=" mt-20 services-content">
-              <p className=" text-[12px]">FOR Recruiters</p>
+              <p className=" text-[12px]">For Recruiters</p>
               <h2 className="h2 ">Build Amazing Teams</h2>
-              <p className=" w-[400px]">
+              <p className=" w-[520px]">
                 Enhance the capabilities of your organization with top talent from the tech industry. Our team specializes in tech outsourcing, providing innovative solutions to help you build amazing teams that drive success and achieve your
                 business goals. Whether you need resources for short-term projects or long-term engagements, we have the expertise to help you find the right fit and build a team that exceeds expectations.{" "}
               </p>
@@ -58,7 +58,7 @@ function Processing() {
           <div className="flex mt-[12%]  services-body">
             <img src={img} alt="overview" />
             <div className="services-content">
-              <p className=" text-[12px] mt-[-14px]">FOR RESOurces</p>
+              <p className=" text-[12px] mt-[-14px]">For Resources</p>
               <h1 className="text-[#00325c]">Get Job Placement Without Stress</h1>
               <p>
                 Simplify your job search with our tech outsourcing services. Our team takes the stress out of finding your next job by providing you with personalized support and innovative solutions to get you placed in your dream role. Whether

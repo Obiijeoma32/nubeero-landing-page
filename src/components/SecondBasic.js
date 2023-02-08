@@ -31,7 +31,7 @@ function SecondBasic() {
             </div>
             <div className="option-link">
               <Link className="pt-2" to="/resourcedetails">
-                NEXT STEP
+                SUBMIT
               </Link>
             </div>
           </div>
