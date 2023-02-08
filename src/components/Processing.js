@@ -14,11 +14,8 @@ function Processing() {
       <div className="dashboard-container mb-[5%] ">
         <div className="dashboard-intro">
           {" "}
-          <h1 className="text-[#00325c] text-[44px] w-[500px] ">Resource Outsourcing & Resource Placement</h1>
-          <p className="text-[#0098db] w-[450px] text-[18px]">
-            {" "}
-            Outsource and place top talent for your organization to meet your business needs efficiently. Our team will help you find the right resources, whether it be short-term projects or long-term engagements.
-          </p>
+          <h1>Resource Outsourcing & Resource Placement</h1>
+          <p> Outsource and place top talent for your organization to meet your business needs efficiently. Our team will help you find the right resources, whether it be short-term projects or long-term engagements.</p>
           <div className="home-link">
             <Link to="/secondbasic">GET STARTED</Link>
           </div>
@@ -31,7 +28,7 @@ function Processing() {
         <div className="services-container">
           <div className="services-header ">
             <h1>Innovative solutions for Resourcing</h1>
-            <p style={{ width: "600px", marginLeft: "20px" }}>Unlock the potential of your organization with innovative solutions for resourcing. Our team offers cutting-edge approaches to meet your unique business needs and drive success.</p>
+            <p>Unlock the potential of your organization with innovative solutions for resourcing. Our team offers cutting-edge approaches to meet your unique business needs and drive success.</p>
           </div>
           <div className="flex services-body1 ">
             <div className=" mt-20 services-content">

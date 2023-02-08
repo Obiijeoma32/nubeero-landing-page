@@ -9,12 +9,12 @@ function Services() {
       <div className="services-container">
         <div className="services-header ">
           <h1>Innovative solutions for Insurtech</h1>
-          <p style={{ width: "600px", marginLeft: "20px" }}>Our AI powered platform manages the insurance portfolio of average citizens in these countries based on environmental risk factors</p>
+          <p>Our AI powered platform manages the insurance portfolio of average citizens in these countries based on environmental risk factors</p>
         </div>
         <div className="flex w-400  services-body1 ">
           <div className=" mt-20 services-content">
             <h2 className="h2 ">Resource Outsourcing</h2>
-            <p style={{ width: "400px" }}>
+            <p className=" w-[400px]">
               Discover the benefits of resource outsourcing with our expert team. Our service provides businesses with access to a diverse range of highly skilled professionals, enabling you to tap into expertise you may not have in-house. From IT
               support to marketing, financial management, and more, our outsourcing solutions are designed to meet your unique business needs.
             </p>

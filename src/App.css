@@ -51,7 +51,7 @@ body {
   justify-content: space-between;
 }
 .dashboard-intro {
-  margin-top: 7rem;
+  margin-top: 5rem;
   width: 500px;
 }
 .dashboard-intro h1 {
@@ -63,7 +63,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   width: 400px;
-  padding-top: 15px;
+  padding-top: 13px;
   color: #0098db;
 }
 .home-link {
@@ -171,6 +171,8 @@ body {
   white-space: nowrap;
 }
 .services-header p {
+  width: 600px;
+  margin-left: 20px;
   font-weight: 400;
   font-size: 18px;
   padding-top: 12px;
@@ -1344,7 +1346,7 @@ body {
   }
   .dashboard-container,
   .processing-home {
-    width: 2660px;
+    width: 2860px;
     margin-left: 7%;
   }
   .link-container {
@@ -1354,7 +1356,7 @@ body {
     margin-left: 2%;
   }
   .partner-icon {
-    width: 2600px;
+    width: 2700px;
     margin-left: 7%;
   }
   .company-logo-container {
@@ -1374,41 +1376,79 @@ body {
     margin-left: 27%;
   }
   .contact-body {
-    margin-left: 32%;
+    width: 1200px;
+    margin-left: 28%;
+  }
+  .services-header p,
+  .services-header h1 {
+    width: 900px;
+    margin-left: 5%;
   }
   .services-body1 {
     width: 1500px;
+    margin-left: 20%;
   }
   .services-body {
     width: 1400px;
     margin-left: 10%;
   }
-  .research-container,
-  .research-insurtech,
   .services-container {
     width: 1500px;
     margin-left: 32%;
   }
+  .research-container,
+  .research-insurtech {
+    width: 1400px;
+    margin-left: 26%;
+  }
   .whatwe-container {
     width: 1850px;
-    margin-left: 23%;
+    margin-left: 31%;
   }
 
   .dashboard-intro,
   .dashboard-intro p {
     width: 1000px;
   }
+  .basic-form-details .input,
+  .timeline-form .div {
+    width: 900px;
+  }
+  .basic-container,
+  .project-container,
+  .onboarding,
+  .branding-container,
+  .funding-container,
+  .timeline-container {
+    width: 3200px;
+    margin-left: 3%;
+  }
+  .options-container {
+    width: 3200px;
+    margin-left: 45%;
+  }
+  .email-container {
+    width: 3200px;
+    margin-left: 50%;
+  }
+
+  .timeline-form input {
+    width: 850px;
+  }
 }
 @media screen and (min-width: 2560px) {
-  .contact-footer,
+  .contact-footer {
+    width: 4300px;
+  }
   .contact-body-container,
   .research-box-container,
   .header-container {
-    width: 2560px;
+    width: 4000px;
   }
+
   .dashboard-container,
   .processing-home {
-    width: 2200px;
+    width: 3650px;
     margin-left: 7%;
   }
   .dashboard-intro,
@@ -1416,61 +1456,78 @@ body {
     width: 1000px;
   }
   .partner-icon {
-    width: 2100px;
+    width: 3500px;
     margin-left: 7%;
   }
   .link-container {
     margin-right: 2%;
   }
-  .services-header {
-    width: 1000px;
-    margin-left: 18%;
+  .services-header p,
+  .services-header h1 {
+    width: 1200px;
+    margin-left: 22%;
   }
-  .services-body {
-    width: 1500px;
+  .services-body,
+  .services-body1 {
+    width: 2000px;
+    margin-left: 22%;
+  }
+  .services-content p {
+    width: 900px;
   }
   .header-logo {
     margin-left: 2%;
   }
   .whatwe-container {
-    width: 2050px;
-    margin-left: 8%;
+    width: 2800px;
+    margin-left: 23%;
   }
   .whatwe-header {
     width: 1200px;
-    margin-left: 20%;
+    margin-left: 25%;
   }
   .research-container {
-    width: 1600px;
+    width: 1500px;
   }
-  .research-insurtech,
-  .services-container {
-    width: 1800px;
-    margin-left: 12%;
-  }
-  .contact-body {
+  .research-insurtech {
+    width: 1900px;
     margin-left: 30%;
   }
-  .company-logo-container {
-    width: 2120px;
-    margin-left: 26%;
+
+  .contact-body {
+    width: 1700px;
+    margin-left: 28%;
   }
-  .contact-footer p,
+  .company-logo-container {
+    width: 2520px;
+    margin-left: 35%;
+  }
+  .contact-footer p {
+    width: 1000px;
+    margin-left: 24%;
+  }
+
   .contact-footer h3 {
-    width: 700px;
-    margin-left: 16%;
+    width: 2350px;
+    margin-left: 29%;
   }
   .contact-footer-icon {
     width: 300px;
-    margin-left: 26%;
+    margin-left: 34%;
   }
   .options-container {
-    width: 2000px;
-    margin-left: 23%;
+    width: 4200px;
+    margin-left: 45%;
   }
 
-  .basic-container {
-    width: 2000px;
+  .basic-container,
+  .project-container,
+  .onboarding,
+  .branding-container,
+  .funding-container,
+  .timeline-container {
+    width: 4200px;
+    margin-left: 3%;
   }
   .basic-form p,
   .basic-form input,
@@ -1484,9 +1541,16 @@ body {
     width: 1300px;
   }
 
+  .basic-form-details .input,
+  .timeline-form .div {
+    width: 1300px;
+  }
+  .timeline-form input {
+    width: 1250px;
+  }
   .email-container {
-    width: 2000px;
-    margin-left: 32%;
+    width: 4200px;
+    margin-left: 50%;
   }
   .email-container h1 {
     width: 700px;
