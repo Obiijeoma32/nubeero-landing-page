@@ -11,7 +11,7 @@ function ResourceDetails() {
         </div>
         <div className="basic-form">
           <h1>Confirm the resource</h1>
-          <p className="w-[670px]">Please fill in the details below so we can get in touch with you</p>
+          <p className="p">Please fill in the details below so we can get in touch with you</p>
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">What role would you like to hire ?</label>
             <br />
@@ -30,10 +30,10 @@ function ResourceDetails() {
             <input className="input" autoComplete="on" type="text" placeholder="Select the experience level you need" />
           </form>
           <div className="basic-button mb-10">
-            <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-              <Link to="/secondbasic">Back</Link>
-            </div>
             <div className="option-link">
+              <Link to="/processing">BACK</Link>
+            </div>
+            <div className="option-link ">
               <Link to="/resourcedetails/resourcemodal">NEXT STEP</Link>
             </div>
           </div>

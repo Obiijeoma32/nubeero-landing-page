@@ -89,8 +89,8 @@ function Option() {
           </div>
         </div>
         <div className="option-button">
-          <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "1rem" }}>
-            <Link to="/home">Back</Link>
+          <div className="option-link">
+            <Link to="/home">BACK</Link>
           </div>
           <div className="option-link">
             <Link to="/basic">NEXT STEP</Link>

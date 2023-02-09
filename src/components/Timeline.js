@@ -11,8 +11,8 @@ function Timeline() {
         </div>
         <div className="timeline-details">
           <h1 className="pd-4">Timeline</h1>
-          <p>Please fill in the details below so we can get in touch with you</p>
-          <h4>{/* intentional */}</h4>
+          <p className="p">Please fill in the details below so we can get in touch with you</p>
+
           <div className="timeline-form">
             <form action="mailto:info@nubeero.com">
               <h2>How soon would you like this project to commence?</h2>
@@ -27,8 +27,8 @@ function Timeline() {
               </div>
             </form>
             <div className="basic-button mt-12 mb-10">
-              <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-                <Link to="/funding">Back</Link>
+              <div className="option-link">
+                <Link to="/funding">BACK</Link>
               </div>
               <div className="option-link" style={{ paddingTop: "14px" }}>
                 <Link to="/timeline">SUBMIT</Link>

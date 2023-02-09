@@ -51,8 +51,8 @@ function ResourcesModal() {
             </div>
           </form>
           <div className="basic-button mt-12 mb-10">
-            <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-              <Link to="/resourcedetails">Back</Link>
+            <div className="option-link">
+              <Link to="/resourcedetails/resourcemodal">BACK</Link>
             </div>
             <div className="option-link" style={{ paddingTop: "14px" }}>
               <Link to="/">SUBMIT</Link>

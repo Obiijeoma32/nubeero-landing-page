@@ -43,7 +43,7 @@ function ContactUs() {
                 SEND
               </button>
             </form>
-            <p style={{ color: "#8476AA", fontSize: "14px" }}>No spam. Only releases, updates and discounts</p>
+            <p style={{ color: "#0098db", fontSize: "14px" }}>No spam. Only releases, updates and discounts</p>
           </div>
         </div>
         <div className="contact-footer">

@@ -11,7 +11,7 @@ function Basic() {
         </div>
         <div className="basic-form">
           <h1>Let's start with your information</h1>
-          <p>Please fill in the details below so we can get in touch with you</p>
+          <p className="p">Please fill in the details below so we can get in touch with you</p>
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">Full Name</label>
             <br />
@@ -26,8 +26,8 @@ function Basic() {
             <input className="input" autoComplete="on" type="number" placeholder="Enter Phone Number" />
           </form>
           <div className="basic-button">
-            <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-              <Link to="/option">Back</Link>
+            <div className="option-link">
+              <Link to="/option">BACK</Link>
             </div>
             <div className="option-link">
               <Link to="/email">NEXT STEP</Link>

@@ -453,7 +453,7 @@ body {
 }
 .option-link {
   width: 157px;
-  height: 56;
+  height: 49px;
   outline: none;
   font-weight: 400;
   font-size: 14px;
@@ -464,27 +464,13 @@ body {
   box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
   border-radius: 3px;
   cursor: pointer;
-  height: 50px;
   padding-top: 14px;
 }
 .option-link:hover,
 .email-link:hover {
   background-color: #000;
 }
-.option-link1 {
-  width: 157px;
-  height: 56;
-  outline: none;
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 2px;
-  cursor: pointer;
-  color: #8476aa;
-}
-.option-link1:hover {
-  color: #000;
-}
+
 .option-detail1 {
   margin-right: 19.5rem;
   width: 600px;
@@ -632,6 +618,7 @@ body {
   margin-bottom: 1px;
 }
 .basic-form p {
+  width: 670px;
   font-weight: 400;
   font-size: 18px;
   color: #0098db;
@@ -806,8 +793,8 @@ body {
 }
 
 .file-field h2,
-.funding-details h4,
-.timeline-details h4 {
+.funding-details p,
+.timeline-details p {
   width: 670px;
 }
 .file-field input::-webkit-file-upload-button {
@@ -976,8 +963,8 @@ body {
   font-size: 32px;
   color: #00325c;
 }
-.branding-details p,
-.funding-details p,
+.branding-details .p,
+.funding-details .p,
 .timeline-details p {
   font-weight: 400;
   font-size: 16px;
@@ -985,10 +972,10 @@ body {
   padding-top: 2px;
   padding-bottom: 10px;
 }
-.branding-details h4,
-.funding-details h4,
-.timeline-details h4 {
-  border: 1px solid #bbbec2;
+.branding-details .p,
+.funding-details .p,
+.timeline-details .p {
+  border-bottom: 1px solid #bbbec2;
 }
 .branding-form,
 .funding-form,
@@ -1061,7 +1048,7 @@ body {
   top: 0;
   z-index: 222;
   width: 100%;
-  height: 150vh;
+  height: 300vh;
 }
 .alldispute-content {
   position: fixed;
@@ -1321,9 +1308,9 @@ body {
   .onboarding-container .p,
   .onboarding-form .inputform,
   .project-brief .p,
-  .branding-details h4,
-  .funding-details h4,
-  .timeline-details h4 {
+  .branding-details .p,
+  .funding-details p,
+  .timeline-details p {
     width: 900px;
   }
 
@@ -1342,7 +1329,8 @@ body {
   }
   .contact-body-container,
   .research-box-container,
-  .header-container {
+  .header-container,
+  .services-container {
     width: 3050px;
     /* text-align: center; */
   }
@@ -1388,14 +1376,13 @@ body {
   }
   .services-body1 {
     width: 1500px;
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .services-body {
     width: 1400px;
     margin-left: 10%;
   }
   .services-container {
-    width: 1500px;
     margin-left: 32%;
   }
   .research-container,
@@ -1413,6 +1400,15 @@ body {
     width: 1000px;
   }
   .basic-form-details .input,
+  .basic-form .p,
+  .onboarding-container .p,
+  .project-brief p,
+  .onboarding-form .inputform .project-brief .p,
+  .basic-button,
+  .timeline-form .div,
+  .branding-details .p,
+  .funding-details .p,
+  .timeline-details .p,
   .timeline-form .div {
     width: 900px;
   }
@@ -1444,7 +1440,8 @@ body {
   }
   .contact-body-container,
   .research-box-container,
-  .header-container {
+  .header-container,
+  .services-container {
     width: 4000px;
   }
 
@@ -1533,6 +1530,7 @@ body {
   }
   .basic-form p,
   .basic-form input,
+  .basic-form-details .input,
   .basic-button,
   .onboarding-container .p,
   .onboarding-form .inputform,
@@ -1544,7 +1542,14 @@ body {
   }
 
   .basic-form-details .input,
-  .timeline-form .div {
+  .timeline-form .div,
+  .basic-button,
+  .basic-form .p,
+  .onboarding-container .p,
+  .project-brief .p,
+  .branding-details .p,
+  .funding-details .p,
+  .timeline-details .p {
     width: 1300px;
   }
   .timeline-form input {

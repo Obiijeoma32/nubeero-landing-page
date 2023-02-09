@@ -21,6 +21,7 @@ import SecondSideBar from "./components/SecondSideBar";
 import ResourceDetails from "./components/ResourceDetails";
 import SecondBasic from "./components/SecondBasic";
 import ResourcesModal from "./components/ResourcesModal";
+import RRPage from "./components/RRPage";
 import "./index.css";
 import "./App.css";
 
@@ -32,6 +33,8 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route path="/resourcedetails/resourcemodal" element={<ResourcesModal />} />
+            <Route path="/rrpage" element={<RRPage />} />
+            <Route path="/secondbasic/resourcemodal" element={<ResourcesModal />} />
             <Route path="/secondbasic" element={<SecondBasic />} />
             <Route path="/secondsidebar" element={<SecondSideBar />} />
             <Route path="/resourcedetails" element={<ResourceDetails />} />

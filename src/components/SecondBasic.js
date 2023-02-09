@@ -11,7 +11,7 @@ function SecondBasic() {
         </div>
         <div className="basic-form">
           <h1>Let's start with your information</h1>
-          <p className="w-[670px]">Please fill in the details below so we can get in touch with you</p>
+          <p className="p">Please fill in the details below so we can get in touch with you</p>
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">Full Name</label>
             <br />
@@ -26,12 +26,12 @@ function SecondBasic() {
             <input className="input" autoComplete="on" type="number" placeholder="Enter Phone Number" />
           </form>
           <div className="basic-button mb-10">
-            <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-              <Link to="/processing">Back</Link>
+            <div className="option-link">
+              <Link to="/processing">BACK</Link>
             </div>
             <div className="option-link">
-              <Link className="pt-2" to="/resourcedetails">
-                SUBMIT
+              <Link className="pt-2" to="/secondbasic/resourcemodal">
+                NEXT STEP
               </Link>
             </div>
           </div>

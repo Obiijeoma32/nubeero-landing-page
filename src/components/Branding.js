@@ -14,8 +14,8 @@ function Branding() {
         </div>
         <div className="branding-details">
           <h1>Branding</h1>
-          <p>Please fill in the details below so we can get in touch with you</p>
-          <h4>{/* intentional space */}</h4>
+          <p className="p">Please fill in the details below so we can get in touch with you</p>
+
           <div className="branding-form">
             <form autoComplete="on" action="mailto:info@nubeero.com">
               <h2>Have you ever built a digital product/service before?</h2>
@@ -33,8 +33,8 @@ function Branding() {
             </form>
             {page && <BrandingComponent closeModal={setPage} />}
             <div className="basic-button mt-12 mb-10">
-              <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-                <Link to="/project">Back</Link>
+              <div className="option-link">
+                <Link to="/project">BACK</Link>
               </div>
               <div className="option-link" style={{ paddingTop: "14px" }}>
                 <Link to="/funding">NEXT STEP</Link>

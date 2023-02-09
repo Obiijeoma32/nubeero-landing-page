@@ -56,8 +56,8 @@ function Onboarding() {
               <br />
             </form>
             <div className="basic-button">
-              <div className="option-link1" style={{ paddingRight: "7rem", paddingTop: "0.5rem" }}>
-                <Link to="/basic">Back</Link>
+              <div className="option-link" >
+                <Link to="/basic">BACK</Link>
               </div>
               <div className="option-link">
                 <Link to="/project">NEXT STEP</Link>
