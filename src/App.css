@@ -1529,30 +1529,24 @@ body {
     width: 4200px;
     margin-left: 3%;
   }
-  .basic-form p,
+
   .basic-form input,
-  .basic-form-details .input,
   .basic-button,
   .onboarding-container .p,
   .onboarding-form .inputform,
   .project-brief .p,
   .branding-details h4,
   .funding-details h4,
+  .basic-form-details .input,
+  .timeline-form .div,
+  .branding-details .p,
+  .funding-details .p,
+  .timeline-details .p,
+  .basic-form .p,
   .timeline-details h4 {
     width: 1300px;
   }
 
-  .basic-form-details .input,
-  .timeline-form .div,
-  .basic-button,
-  .basic-form .p,
-  .onboarding-container .p,
-  .project-brief .p,
-  .branding-details .p,
-  .funding-details .p,
-  .timeline-details .p {
-    width: 1300px;
-  }
   .timeline-form input {
     width: 1250px;
   }

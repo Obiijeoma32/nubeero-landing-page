@@ -55,7 +55,7 @@ function ResourcesModal() {
               <Link to="/resourcedetails/resourcemodal">BACK</Link>
             </div>
             <div className="option-link" style={{ paddingTop: "14px" }}>
-              <Link to="/">SUBMIT</Link>
+              <Link to="/resourcedetails">SUBMIT</Link>
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ function SecondBasic() {
             <br />
             <label htmlFor="number">Phone Number</label>
             <br />
-            <input className="input" autoComplete="on" type="number" placeholder="Enter Phone Number" />
+            <input className="input" autoComplete="on" type="tel" placeholder="Enter Phone Number" />
           </form>
           <div className="basic-button mb-10">
             <div className="option-link">
