@@ -1435,20 +1435,21 @@ body {
   }
 }
 @media screen and (min-width: 2560px) {
-  .contact-footer {
+  .contact-footer,
+  .dd,
+  .dd-options {
     width: 4300px;
   }
   .contact-body-container,
   .research-box-container,
-  .header-container,
-  .services-container {
+  .header-container {
     width: 4000px;
   }
 
   .dashboard-container,
   .processing-home {
     width: 3650px;
-    margin-left: 7%;
+    margin-left: 5%;
   }
   .dashboard-intro,
   .dashboard-intro p {
@@ -1516,7 +1517,7 @@ body {
   }
   .options-container {
     width: 4200px;
-    margin-left: 45%;
+    margin-left: 40%;
   }
 
   .basic-container,
