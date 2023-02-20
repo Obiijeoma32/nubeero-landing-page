@@ -1,8 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import PrivacyPolicy from "./PrivacyPolicy";
+import TermsAndCondition from "./TermsAndCondition";
 import SecondSideBar from "./SecondSideBar";
+import "../App.css";
 
 function ResourcesModal() {
+  const [termsClick, setTermsClick] = useState(false);
+  const [privacyClick, setPrivacyClick] = useState(false);
+
+  function handleTermsClose() {
+    setTermsClick(false);
+  }
+  function handlePolicyClose() {
+    setPrivacyClick(false);
+  }
   return (
     <>
       <div className="project-container flex">
@@ -16,19 +28,19 @@ function ResourcesModal() {
           <form className="basic-form-details mt-10" action="mailto:info@nubeero.com">
             <label htmlFor="name">What is your job role</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Enter the role would you like to be hired ?" />
+            <input className="input" autoComplete="on" type="text" placeholder="Enter the role would you like to be hired ?" required />
             <br />
             <label htmlFor="name">What is your expertise level</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Select your expertise level" />
+            <input className="input" autoComplete="on" type="text" placeholder="Select your expertise level" required />
             <br />
             <label htmlFor="name">How many years of experience do you have in this field ?</label>
             <br />
-            <input className="input" autoComplete="on" type="number" placeholder="Enter years of experience" />
+            <input className="input" autoComplete="on" type="number" placeholder="Enter years of experience" required />
             <br />
             <label htmlFor="name">Give a brief description about yourself</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Describe your top skills, strengths, and experiences." />
+            <input className="input" autoComplete="on" type="text" placeholder="Describe your top skills, strengths, and experiences." required />
             <br />
             <label htmlFor="name">Please share your cv and any relevant document</label>
             <br />
@@ -50,6 +62,21 @@ function ResourcesModal() {
               <input type="file" name="file[]" id="attachment" accept=".doc,.xml,.xls,.pdf,.ppt" multiple />
             </div>
           </form>
+          <div className=" mt-8 flex w-[350px] items-center justify-between">
+            <input className="w-[20px] h-[20px] " type="checkbox" required />
+            <label className="text-[#00325c] text-[14px]" htmlFor="privacy and Terms">
+              <span onClick={() => setTermsClick(true)} className=" hover:underline cursor-pointer hover:text-[#0098db]">
+                Terms and Conditions
+              </span>
+              ,
+              <span onClick={() => setPrivacyClick(true)} className=" hover:underline cursor-pointer hover:text-[#0098db]">
+                {"  "}
+                Privacy Agreement
+              </span>
+              {"  "}
+              polices
+            </label>
+          </div>
           <div className="basic-button mt-12 mb-10">
             <div className="option-link">
               <Link to="/resourcedetails/resourcemodal">BACK</Link>
@@ -60,6 +87,8 @@ function ResourcesModal() {
           </div>
         </div>
       </div>
+      {termsClick && <TermsAndCondition handleTermsClose={handleTermsClose} />}
+      {privacyClick && <PrivacyPolicy handlePolicyClose={handlePolicyClose} />}
     </>
   );
 }

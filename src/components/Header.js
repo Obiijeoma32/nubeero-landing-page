@@ -16,7 +16,7 @@ function Header({ children }) {
     },
     {
       path: "/service",
-      name: "RESOURCES",
+      name: "RESOURCING",
     },
     {
       path: "/research",

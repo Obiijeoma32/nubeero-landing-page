@@ -1,6 +1,14 @@
+import { useState } from "react";
+import BrandingDialogueBox from "./BrandingDialogueBox";
 import "../App.css";
 
 function BrandingComponent({ closeModal }) {
+  const [others, setOthers] = useState(false);
+
+  function handleOthers() {
+    setOthers((current) => !current);
+  }
+
   return (
     <>
       <div>
@@ -65,11 +73,12 @@ function BrandingComponent({ closeModal }) {
         </span>
         <br />
         <span>
-          <input type="checkbox" />
+          <input onClick={handleOthers} type="checkbox" />
           <label htmlFor="other">Other:</label>
         </span>
         <br />
       </div>
+      {others && <BrandingDialogueBox />}
     </>
   );
 }

@@ -17,13 +17,13 @@ function Onboarding() {
               <br />
               <p>What do we refer your project as? E.g. "Beto App"</p>
               <br />
-              <input className="inputform" type="text" placeholder="Enter here" />
+              <input className="inputform" type="text" placeholder="Enter here" required />
               <br />
               <label htmlFor="summary">Project Summary</label>
               <br />
               <p>General review or summary of what your project entails. E.g. "The Motivv App is aimed to bridge the gap between clients and designers" or " Uber but for bikes" or "Something like Facebook"</p>
               <br />
-              <input className="inputform" type="text" placeholder="Enter here" />
+              <input className="inputform" type="text" placeholder="Enter here" required />
               <br />
               <label htmlFor="brief">Project Brief</label>
               <br />
@@ -44,7 +44,7 @@ function Onboarding() {
                   </svg>
                 </span>
 
-                <input type="file" name="file[]" id="attachment" accept=".doc,.xml,.xls,.pdf,.ppt" multiple />
+                <input type="file" name="file[]" id="attachment" accept=".doc,.xml,.xls,.pdf,.ppt" multiple required />
               </div>
               <label className=" " htmlFor="summary">
                 Project Brief & Features
@@ -52,11 +52,11 @@ function Onboarding() {
               <br />
               <p>In the event of no file, kindly write your project brief.</p>
               <br />
-              <input className="inputform" type="text" placeholder="Enter here" />
+              <input className="inputform" type="text" placeholder="Enter here" required />
               <br />
             </form>
             <div className="basic-button">
-              <div className="option-link" >
+              <div className="option-link">
                 <Link to="/basic">BACK</Link>
               </div>
               <div className="option-link">

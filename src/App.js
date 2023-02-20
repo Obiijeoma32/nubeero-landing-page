@@ -24,6 +24,7 @@ import ResourcesModal from "./components/ResourcesModal";
 import RRPage from "./components/RRPage";
 import "./index.css";
 import "./App.css";
+import ResourcesForBasicInfo from "./components/ResourcesForBasicInfo";
 
 function App() {
   return (
@@ -32,9 +33,10 @@ function App() {
         <Header>
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
+            <Route path="/resoucesforbasicinfo" element={<ResourcesForBasicInfo />} />
             <Route path="/resourcedetails/resourcemodal" element={<ResourcesModal />} />
             <Route path="/rrpage" element={<RRPage />} />
-            <Route path="/secondbasic/resourcemodal" element={<ResourcesModal />} />
+            {/* <Route path="/secondbasic/resourcemodal" element={<ResourcesModal />} /> */}
             <Route path="/secondbasic" element={<SecondBasic />} />
             <Route path="/secondsidebar" element={<SecondSideBar />} />
             <Route path="/resourcedetails" element={<ResourceDetails />} />

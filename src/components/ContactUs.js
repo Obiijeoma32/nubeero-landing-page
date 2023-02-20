@@ -37,7 +37,7 @@ function ContactUs() {
                 Message
               </label>
               <br />
-              <textarea placeholder="typing..." rows="4" cols="36" />
+              <textarea placeholder="typing..." />
               <br />
               <button type="submit" value="send">
                 SEND

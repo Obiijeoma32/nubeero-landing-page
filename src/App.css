@@ -284,7 +284,7 @@ body {
 .contact-body {
   width: 900px;
   margin-top: 10rem;
-  background: rgba(241, 228, 228, 0.19);
+  background: rgba(253, 251, 251, 0.798);
   backdrop-filter: blur(67px);
   border-radius: 5px;
   height: 690px;
@@ -334,6 +334,11 @@ body {
   background-color: #d2d6df;
   border-radius: 3px 0px 0px 3px;
   margin-top: 5px;
+  outline: none;
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 330px;
+  height: 100px;
 }
 .contact-form textarea::placeholder {
   font-family: "Euclid Circular B";
@@ -342,12 +347,11 @@ body {
   font-size: 14px;
   letter-spacing: 0.2px;
   color: #bdc0c8;
-  padding-left: 15px;
 }
 .contact-input {
   margin-top: 5px;
   margin-bottom: 15px;
-  /* outline: #00325c; */
+  outline: none;
   width: 330px;
   background-color: #d2d6df;
   height: 50px;
@@ -1019,6 +1023,20 @@ body {
   color: #0098db;
   margin-left: 10px;
 }
+.brandingdialoguebox textarea {
+  width: 670px;
+  height: 120px;
+  border: 1.5px solid #bbbec2;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 8px;
+  color: #00325c;
+}
+.brandingdialoguebox label {
+  margin-left: -1px;
+}
 .funding-details {
   margin-left: 25rem;
   padding-top: 2rem;
@@ -1035,7 +1053,7 @@ body {
   cursor: pointer;
   display: flex;
 }
-.timeline-form input {
+.timeline-form .date {
   outline: none;
   border: none;
   width: 600px;
@@ -1117,6 +1135,7 @@ body {
   font-family: "Euclid Circular B";
   cursor: pointer;
 }
+
 /* @media (min-width: 476px) and (max-width: 789px) {
   .header-logo img {
     width: 300px;

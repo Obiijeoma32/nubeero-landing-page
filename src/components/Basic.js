@@ -15,22 +15,22 @@ function Basic() {
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">Full Name</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Enter Name" />
+            <input className="input" autoComplete="on" type="text" placeholder="Enter Name" required />
             <br />
             <label htmlFor="address">Email Address</label>
             <br />
-            <input className="input" autoComplete="on" type="email" placeholder="ex:janedoe000@mail.com" />
+            <input className="input" autoComplete="on" type="email" placeholder="ex:janedoe000@mail.com" required />
             <br />
             <label htmlFor="number">Phone Number</label>
             <br />
-            <input className="input" autoComplete="on" type="tel" placeholder="Enter Phone Number" />
+            <input className="input" autoComplete="on" type="tel" placeholder="Enter Phone Number" required />
           </form>
           <div className="basic-button">
             <div className="option-link">
               <Link to="/option">BACK</Link>
             </div>
             <div className="option-link">
-              <Link to="/email">NEXT STEP</Link>
+              <Link to="/onboarding">NEXT STEP</Link>
             </div>
           </div>
         </div>
