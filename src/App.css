@@ -338,6 +338,7 @@ body {
   padding-left: 15px;
   padding-top: 10px;
   width: 330px;
+  color: #00325c;
   height: 100px;
 }
 .contact-form textarea::placeholder {
@@ -350,6 +351,7 @@ body {
 }
 .contact-input {
   margin-top: 5px;
+  color: #00325c;
   margin-bottom: 15px;
   outline: none;
   width: 330px;
