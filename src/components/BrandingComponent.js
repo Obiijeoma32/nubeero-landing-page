@@ -74,7 +74,7 @@ function BrandingComponent({ closeModal }) {
         <br />
         <span>
           <input onClick={handleOthers} type="checkbox" />
-          <label htmlFor="other">Other:</label>
+          <label htmlFor="other">Others:</label>
         </span>
         <br />
       </div>
