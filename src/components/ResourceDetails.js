@@ -75,7 +75,7 @@ function ResourcesForBasicInfo() {
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">What role would you like to hire ?</label>
             <br />
-            <Select placeholder="Select the role you would like to higher" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={jobRole} />
+            <Select placeholder="Select the role you would like to hire" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={jobRole} />
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
