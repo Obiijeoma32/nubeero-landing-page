@@ -6,6 +6,12 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import "../App.css";
 import SecondSideBar from "./SecondSideBar";
 
+const jobRole = [
+  { value: "entry", label: "Entry Level" },
+  { value: "junior", label: "Junior Level" },
+  { value: "inter", label: "Intermediate Level" },
+  { value: "senior", label: "Senior Level" },
+];
 const options = [
   { value: "Software Dev Engineer ", label: "Software Dev Engineer (Artificial Intelligence, Machine Learning, and Blockchain)" },
   { value: "Sre", label: "Site Reliability Engineer (SRE's)" },
@@ -69,7 +75,7 @@ function ResourcesForBasicInfo() {
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">What role would you like to hire ?</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Enter the role would you like to hire ?" required />
+            <Select placeholder="Select the role you would like to higher" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={jobRole} />
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
