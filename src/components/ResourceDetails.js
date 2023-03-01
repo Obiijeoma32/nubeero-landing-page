@@ -73,15 +73,15 @@ function ResourcesForBasicInfo() {
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={options} />
+            <Select placeholder="Select the skills required" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={options} />
             <br />
             <label htmlFor="text">What job type ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={jobType} />
+            <Select placeholder="Select the job type" styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={jobType} />
             <br />
             <label htmlFor="text">What level of experience are you looking for ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px] mt-[10px]  text-[#00325c] outline-none " options={years} />
+            <Select placeholder="Select the experience level you need" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={years} />
           </form>
           <div className=" mt-8 mb-8 flex w-[350px] items-center justify-between">
             <input className="w-[20px] h-[20px] " type="checkbox" required />

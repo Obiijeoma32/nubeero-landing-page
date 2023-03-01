@@ -31,6 +31,15 @@ const years = [
   { value: "six", label: "5 years but less than 10 years" },
   { value: "seven", label: "10 years and above" },
 ];
+const jobType = [
+  { value: "full", label: " Full Time (On-site)" },
+  {
+    value: "fulltime",
+    label: " Full Time (Remote)",
+  },
+  { value: "part", label: " Part Time (On-site)" },
+  { value: "part-remote", label: " Part Time (Remote)" },
+];
 const customStyles = {
   control: (base) => ({
     ...base,
@@ -64,15 +73,15 @@ function ResourcesForBasicInfo() {
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={options} />
+            <Select placeholder="Select the skills required" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={options} />
             <br />
             <label htmlFor="text">What job type ?</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Select the job type " required />
+            <Select placeholder="Select the job type" styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={jobType} />
             <br />
             <label htmlFor="text">What level of experience are you looking for ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={years} />
+            <Select placeholder="Select the experience level you need" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={years} />
           </form>
           <div className=" mt-8 mb-8 flex w-[350px] items-center justify-between">
             <input className="w-[20px] h-[20px] " type="checkbox" required />
