@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
-import SecondBasicSideBar from "./SecondBasicSideBar";
 import TermsAndCondition from "./TermsAndCondition";
 import PrivacyPolicy from "./PrivacyPolicy";
 import "../App.css";
+import SecondSideBar from "./SecondSideBar";
 
 const options = [
   { value: "Software Dev Engineer ", label: "Software Dev Engineer (Artificial Intelligence, Machine Learning, and Blockchain)" },
@@ -31,11 +31,19 @@ const years = [
   { value: "six", label: "5 years but less than 10 years" },
   { value: "seven", label: "10 years and above" },
 ];
+const jobType = [
+  { value: "full", label: " Full Time (On-site)" },
+  {
+    value: "fulltime",
+    label: " Full Time (Remote)",
+  },
+  { value: "part", label: " Part Time (On-site)" },
+  { value: "part-remote", label: " Part Time (Remote)" },
+];
 const customStyles = {
   control: (base) => ({
     ...base,
     height: 60,
-    outline: "none",
     minHeight: 60,
   }),
 };
@@ -53,7 +61,7 @@ function ResourcesForBasicInfo() {
     <>
       <div className="flex mt-4 basic-container">
         <div className="sidebar-basic">
-          <SecondBasicSideBar />
+          <SecondSideBar />
         </div>
         <div className="basic-form">
           <h1>Confirm the resource</h1>
@@ -65,15 +73,15 @@ function ResourcesForBasicInfo() {
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px]  border-r-[5px] mt-[10px] text-[#00325c] outline-none " options={options} />
+            <Select styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={options} />
             <br />
             <label htmlFor="text">What job type ?</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Select the job type " required />
+            <Select styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={jobType} />
             <br />
             <label htmlFor="text">What level of experience are you looking for ?</label>
             <br />
-            <Select styles={customStyles} className="w-[670px] mt-[10px] border-r-[5px] text-[#00325c] outline-none " options={years} />
+            <Select styles={customStyles} className="w-[670px] mt-[10px]  text-[#00325c] outline-none " options={years} />
           </form>
           <div className=" mt-8 mb-8 flex w-[350px] items-center justify-between">
             <input className="w-[20px] h-[20px] " type="checkbox" required />
