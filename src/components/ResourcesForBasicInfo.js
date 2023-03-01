@@ -1,10 +1,43 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Select from "react-select";
 import SecondBasicSideBar from "./SecondBasicSideBar";
 import TermsAndCondition from "./TermsAndCondition";
 import PrivacyPolicy from "./PrivacyPolicy";
 import "../App.css";
 
+const options = [
+  { value: "Software Dev Engineer ", label: "Software Dev Engineer (Artificial Intelligence, Machine Learning, and Blockchain)" },
+  { value: "Sre", label: "Site Reliability Engineer (SRE's)" },
+  { value: "data", label: "Data Engineers/Analysis" },
+  { value: "cloud", label: "Cloud/Data Architects" },
+  { value: "developers", label: "Full Stack Developers" },
+  { value: "ce", label: "Cloud Engineers" },
+  { value: "DE", label: "Data Engineers" },
+  { value: "security", label: "Security Architects/Cyber Security Analyist" },
+  { value: "Db", label: "Database Administrators" },
+  { value: "BA", label: "Business Analysis" },
+  { value: "ST", label: "Software Testers" },
+  { value: "devops", label: "Devops Engineer" },
+  { value: "PM", label: "Product Manager" },
+  { value: "ui/ux", label: "User Interface (UI)/User Experience (UX) Designer" },
+];
+const years = [
+  { value: "oneYear", label: " Less than 1 year" },
+  { value: "two", label: "1 year but less than 2 years" },
+  { value: "three", label: "2 years but less than 3 years" },
+  { value: "four", label: "3 years but less than 4 years" },
+  { value: "five", label: "4 years but less than 5 years" },
+  { value: "six", label: "5 years but less than 10 years" },
+  { value: "seven", label: "10 years and above" },
+];
+const customStyles = {
+  control: (base) => ({
+    ...base,
+    height: 60,
+    minHeight: 60,
+  }),
+};
 function ResourcesForBasicInfo() {
   const [termsClick, setTermsClick] = useState(false);
   const [privacyClick, setPrivacyClick] = useState(false);
@@ -31,7 +64,7 @@ function ResourcesForBasicInfo() {
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Select the skills required" required />
+            <Select styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={options} />
             <br />
             <label htmlFor="text">What job type ?</label>
             <br />
@@ -39,7 +72,7 @@ function ResourcesForBasicInfo() {
             <br />
             <label htmlFor="text">What level of experience are you looking for ?</label>
             <br />
-            <input className="input" autoComplete="on" type="text" placeholder="Select the experience level you need" required />
+            <Select styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={years} />
           </form>
           <div className=" mt-8 mb-8 flex w-[350px] items-center justify-between">
             <input className="w-[20px] h-[20px] " type="checkbox" required />

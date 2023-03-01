@@ -12,7 +12,7 @@ import Basic from "./components/Basic";
 import Branding from "./components/Branding";
 import Funding from "./components/Funding";
 import Onboarding from "./components/Onboarding";
-
+// import { ErrorBoundary } from "react-error-boundary";
 import ProjectBrief from "./components/ProjectBrief";
 import Timeline from "./components/Timeline";
 import Email from "./components/Email";
@@ -26,8 +26,19 @@ import "./index.css";
 import "./App.css";
 import ResourcesForBasicInfo from "./components/ResourcesForBasicInfo";
 
+// function ErrorFallback({ error, resetErrorBoundary }) {
+//   return (
+//     <div className="" role="alert">
+//       <p>Something went wrong:</p>
+//       <pre>{error.message}</pre>
+//       <button onClick={resetErrorBoundary}>Try again</button>
+//     </div>
+//   );
+// }
+
 function App() {
   return (
+    // <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => {}}>
     <div>
       <BrowserRouter>
         <Header>
@@ -63,6 +74,7 @@ function App() {
         </Header>
       </BrowserRouter>
     </div>
+    // </ErrorBoundary>
   );
 }
 
