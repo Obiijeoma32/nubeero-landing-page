@@ -3,6 +3,7 @@ import NubeeroLogo from "./NubeeroLogo";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsAndCondition from "./TermsAndCondition";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 function ContactUs() {
   const [privacy, setPrivacy] = useState(false);
@@ -57,7 +58,9 @@ function ContactUs() {
               <span className=" cursor-pointer mr-[7px] hover:underline" onClick={() => setTerms(true)}>
                 Terms and Conditions
               </span>
-              <span className="mr-[5px]">Contact us</span>
+              <Link to="/contact" className="mr-[5px] hover:underline">
+                Contact us
+              </Link>
 
               <span className=" cursor-pointer  hover:underline" onClick={() => setPrivacy(true)}>
                 {"  "}

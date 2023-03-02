@@ -75,33 +75,32 @@ function ResourcesForBasicInfo() {
           <form className="basic-form-details" action="mailto:info@nubeero.com">
             <label htmlFor="name">What role would you like to hire ?</label>
             <br />
-            <Select placeholder="Select the role you would like to hire" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={jobRole} />
+            <Select placeholder="Select the role you would like to hire" styles={customStyles} className="lg:w-[670px] mt-[10px] text-[#00325c] xl:w-[670px] outline-none 2xl:w-[900px] " options={jobRole} />
             <br />
             <label htmlFor="address">What skill are you looking out for ?</label>
             <br />
-            <Select placeholder="Select the skills required" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={options} />
+            <Select placeholder="Select the skills required" styles={customStyles} className="lg:w-[670px] mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px] " options={options} />
             <br />
             <label htmlFor="text">What job type ?</label>
             <br />
-            <Select placeholder="Select the job type" styles={customStyles} className="w-[670px]   mt-[10px] text-[#00325c] outline-none " options={jobType} />
+            <Select placeholder="Select the job type" styles={customStyles} className="lg:w-[670px]   mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px] " options={jobType} />
             <br />
             <label htmlFor="text">What level of experience are you looking for ?</label>
             <br />
-            <Select placeholder="Select the experience level you need" styles={customStyles} className="w-[670px] mt-[10px] text-[#00325c] outline-none " options={years} />
+            <Select placeholder="Select the experience level you need" styles={customStyles} className="lg:w-[670px] mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px] " options={years} />
           </form>
-          <div className=" mt-8 mb-8 flex w-[350px] items-center justify-between">
-            <input className="w-[20px] h-[20px] " type="checkbox" required />
-            <label className="text-[#00325c] text-[14px]" htmlFor="privacy and Terms">
-              <span onClick={() => setTermsClick(true)} className=" hover:underline cursor-pointer hover:text-[#0098db]">
+          <div className=" mt-7 mb-5 ml-[-2px]  resources-privacy  ">
+            <label className="text-[#00325c]  flex w-[360px]  text-[14px]  " htmlFor="privacy and Terms">
+              <input className="w-[20px] h-[20px] " type="checkbox" required />
+              <span onClick={() => setTermsClick(true)} className="ml-[10px] hover:underline cursor-pointer hover:text-[#0098db]">
                 Terms and Conditions
               </span>
               ,
               <span onClick={() => setPrivacyClick(true)} className=" hover:underline cursor-pointer hover:text-[#0098db]">
                 {"  "}
-                Privacy Agreement
+                Privacy Agreement{" "}
               </span>
-              {"  "}
-              polices
+              <span className="ml-[5px]"> polices</span>
             </label>
           </div>
           <div className="basic-button mb-10">

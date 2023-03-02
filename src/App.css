@@ -331,7 +331,6 @@ body {
   background: #000;
 }
 .contact-form textarea {
-  background-color: #d2d6df;
   border-radius: 3px 0px 0px 3px;
   margin-top: 5px;
   outline: none;
@@ -355,7 +354,7 @@ body {
   margin-bottom: 15px;
   outline: none;
   width: 330px;
-  background-color: #d2d6df;
+
   height: 50px;
   padding: 15px;
   border-radius: 3px 0px 0px 3px;
@@ -1137,6 +1136,12 @@ body {
   font-family: "Euclid Circular B";
   cursor: pointer;
 }
+.resources-privacy {
+  width: 370px;
+  white-space: nowrap;
+  height: 40px;
+  text-align: center;
+}
 
 /* @media (min-width: 476px) and (max-width: 789px) {
   .header-logo img {
@@ -1254,6 +1259,7 @@ body {
   .header-container {
     width: 1900px;
   }
+
   .contact-body-container,
   .research-box-container {
     width: 1600px;
@@ -1322,6 +1328,12 @@ body {
   }
   .basic-container {
     width: 1400px;
+  }
+  .resources-privacy {
+    width: 370px;
+    white-space: nowrap;
+    height: 40px;
+    text-align: center;
   }
   .basic-form p,
   .basic-form input,
