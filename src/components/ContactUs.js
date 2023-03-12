@@ -23,22 +23,22 @@ function ContactUs() {
           <div className="contact-body">
             <h1>Reach out to us for any information</h1>
             <p>We are waiting to recieve your message drop us your email and we’d be sure to reach out. </p>
-            <form autoComplete="on" className="contact-form" action="mailto:info@nubeero.com">
+            <form autoComplete="on" className="contact-form" action="https://formsubmit.co/obiijeoma32@gmail.com" method="POST">
               <label htmlFor="name">Full Name</label>
               <br />
-              <input className="contact-input" type="text" placeholder="Enter your first and last name" />
+              <input className="contact-input" type="text" name="name" placeholder="Enter your first and last name" />
               <br />
               <label style={{ marginLeft: "3.5%" }} htmlFor="Email">
                 Email Address
               </label>
               <br />
-              <input className="contact-input" type="email" placeholder="Your Email" />
+              <input className="contact-input" type="email" name="email" placeholder="Your Email" />
               <br />
               <label style={{ marginLeft: "-0.5%" }} htmlFor="message">
                 Message
               </label>
               <br />
-              <textarea placeholder="typing..." />
+              <textarea name="message" placeholder="typing..." />
               <br />
               <button type="submit" value="send">
                 SEND

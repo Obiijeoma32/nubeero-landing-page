@@ -1,4 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Header from "./components/Header";
 import WhatWe from "./components/WhatWe";
 import Services from "./components/Services";
@@ -12,7 +13,6 @@ import Basic from "./components/Basic";
 import Branding from "./components/Branding";
 import Funding from "./components/Funding";
 import Onboarding from "./components/Onboarding";
-// import { ErrorBoundary } from "react-error-boundary";
 import ProjectBrief from "./components/ProjectBrief";
 import Timeline from "./components/Timeline";
 import Email from "./components/Email";
@@ -22,32 +22,25 @@ import ResourceDetails from "./components/ResourceDetails";
 import SecondBasic from "./components/SecondBasic";
 import ResourcesModal from "./components/ResourcesModal";
 import RRPage from "./components/RRPage";
+import ResourcesForBasicInfo from "./components/ResourcesForBasicInfo";
 import "./index.css";
 import "./App.css";
-import ResourcesForBasicInfo from "./components/ResourcesForBasicInfo";
-
-// function ErrorFallback({ error, resetErrorBoundary }) {
-//   return (
-//     <div className="" role="alert">
-//       <p>Something went wrong:</p>
-//       <pre>{error.message}</pre>
-//       <button onClick={resetErrorBoundary}>Try again</button>
-//     </div>
-//   );
-// }
 
 function App() {
   return (
-    // <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => {}}>
     <div>
+      <Helmet>
+        <title>Nubeero</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <BrowserRouter>
         <Header>
           <Routes>
+            <Route path="*" element={<Dashboard />} />
             <Route exact path="/" element={<Dashboard />} />
             <Route path="/resoucesforbasicinfo" element={<ResourcesForBasicInfo />} />
             <Route path="/resourcedetails/resourcemodal" element={<ResourcesModal />} />
             <Route path="/rrpage" element={<RRPage />} />
-            {/* <Route path="/secondbasic/resourcemodal" element={<ResourcesModal />} /> */}
             <Route path="/secondbasic" element={<SecondBasic />} />
             <Route path="/secondsidebar" element={<SecondSideBar />} />
             <Route path="/resourcedetails" element={<ResourceDetails />} />
@@ -74,7 +67,6 @@ function App() {
         </Header>
       </BrowserRouter>
     </div>
-    // </ErrorBoundary>
   );
 }
 
