@@ -9,22 +9,27 @@ function Header({ children }) {
     {
       path: "/home",
       name: "HOME",
+      id: "home",
     },
     {
       path: "/what",
       name: "WHAT WE DO",
+      id: "what",
     },
     {
       path: "/service",
       name: "RESOURCING",
+      id: "service",
     },
     {
       path: "/research",
       name: "RESEARCH",
+      id: "research",
     },
     {
       path: "/contact",
       name: "CONTACT US",
+      id: "contact",
     },
   ];
   // function handleMenu() {
@@ -37,7 +42,7 @@ function Header({ children }) {
           <img src={image} alt="Nubeero Logo" />
         </span>
 
-        <div className=".link-container">
+        <div className="link-container">
           {menuItem.map((item, index) => (
             <NavLink className="header-navlink " to={item.path} key={index}>
               {item.name}

@@ -18,7 +18,7 @@ function ContactUs() {
 
   return (
     <>
-      <div className="contact-container">
+      <div id="contact" className="contact-container">
         <div className="contact-body-container">
           <div className="contact-body">
             <h1>Reach out to us for any information</h1>

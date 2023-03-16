@@ -29,6 +29,7 @@ body {
 }
 .link-container {
   margin-left: 18px;
+  /* display: flex; */
 }
 .header-navlink {
   margin: 23px;

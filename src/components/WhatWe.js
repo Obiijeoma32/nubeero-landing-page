@@ -3,7 +3,7 @@ import "../App.css";
 function WhatWe() {
   return (
     <>
-      <div className="whatwe-container sm:w-[600] mr-[90px]">
+      <div id="what" className="whatwe-container sm:w-[600] mr-[90px]">
         <div className="whatwe-header">
           <h1>What We Do</h1>
           <p>We provide innovative solutions for insurance, business process optimization & ecommerce service. Our promise is that we are growth enablers,serving the needs of the industries in which we play.</p>

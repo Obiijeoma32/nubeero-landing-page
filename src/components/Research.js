@@ -4,7 +4,7 @@ import group from "./group.png";
 function Research() {
   return (
     <>
-      <div className="  research-box-container">
+      <div id="research" className="  research-box-container">
         <div className="flex research-container">
           <div className="research-details">
             <h3>RESEARCH & ANALYTICS</h3>

@@ -54,9 +54,7 @@ function App() {
             <Route path="/sidebar" element={<SideBar />} />
             <Route path="/email" element={<Email />} />
             <Route path="/processing" element={<Processing />} />
-          </Routes>
-
-          <Routes>
+        
             <Route path="/basic" element={<Basic />} />
             <Route path="/branding" element={<Branding />} />
             <Route path="/funding" element={<Funding />} />
