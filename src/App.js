@@ -32,6 +32,10 @@ function App() {
       <Helmet>
         <title>Nubeero</title>
         <meta name="description" content="Helmet application" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />{" "}
       </Helmet>
       <BrowserRouter>
         <Header>
@@ -54,7 +58,7 @@ function App() {
             <Route path="/sidebar" element={<SideBar />} />
             <Route path="/email" element={<Email />} />
             <Route path="/processing" element={<Processing />} />
-        
+
             <Route path="/basic" element={<Basic />} />
             <Route path="/branding" element={<Branding />} />
             <Route path="/funding" element={<Funding />} />
