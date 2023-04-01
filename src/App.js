@@ -30,7 +30,7 @@ function App() {
   return (
     <div>
       <Helmet>
-        <title>Nubeero</title>
+        <title>Nubeero.com</title>
         <meta name="description" content="Helmet application" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
