@@ -61,15 +61,15 @@ function Onboarding() {
     console.log(requestOptions);
 
     fetch(
-      `http://localhost:8080/basicInfo/${id}/onboarding`,
+      `https://nubeerobackend.onrender.com/basicInfo/${id}/onboarding`,
       requestOptions
     )
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
         console.log(data.responsecode);
-        
-        window.location.href = "/project?id="+id;
+
+        window.location.href = "/project?id=" + id;
       })
       .catch((err) => {
         console.log(err.message);

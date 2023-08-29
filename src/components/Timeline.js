@@ -48,7 +48,10 @@ const [termsAndCondition, setTermsAndCondtiion] = useState(false)
 
       console.log(requestOptions);
 
-      fetch(`http://localhost:8080/basicInfo/${id}/timeline`, requestOptions)
+      fetch(
+        `https://nubeerobackend.onrender.com/basicInfo/${id}/timeline`,
+        requestOptions
+      )
         .then((response) => response.json())
         .then((data) => {
           console.log(data);

@@ -38,7 +38,10 @@ function Funding() {
 
     console.log(requestOptions);
 
-    fetch(`http://localhost:8080/basicInfo/${id}/funding`, requestOptions)
+    fetch(
+      `https://nubeerobackend.onrender.com/basicInfo/${id}/funding`,
+      requestOptions
+    )
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

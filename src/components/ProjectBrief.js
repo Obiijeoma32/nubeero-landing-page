@@ -57,31 +57,68 @@ function ProjectBrief() {
      setImportance(event.target.value);
    };
 
+  //  const handleSaveClick = async () => {
+  //    const requestOptions = {
+  //      method: "PUT",
+  //      headers: { "Content-Type": "application/json" },
+  //      body: JSON.stringify({
+  //        developmentPhase: myString,
+  //        brandingGuides: brandingGuides,
+  //        relevantBrandBook: relevantBrandBook ,
+  //        importance: importance,
+  //      }),
+  //    };
+
+  //    console.log(requestOptions);
+
+  //    fetch(
+  //      `https://nubeerobackend.onrender.com/basicInfo/${id}/projectBrief`,
+  //      requestOptions
+  //    )
+  //      .then((response) => response.json())
+  //      .then((data) => {
+  //        console.log(data);
+        
+
+  //        window.location.href = "/branding?id=" + id;
+  //      })
+  //      .catch((err) => {
+  //        console.log(err.message);
+  //      });
+  //  };
+
+
+
    const handleSaveClick = async () => {
-     const requestOptions = {
-       method: "PUT",
-       headers: { "Content-Type": "application/json" },
-       body: JSON.stringify({
-         developmentPhase: myString,
-         brandingGuides: brandingGuides,
-         relevantBrandBook: relevantBrandBook ,
-         importance: importance,
-       }),
-     };
 
-     console.log(requestOptions);
+     window.location.href = "/branding?id=" + id;
+    //  const requestOptions = {
+    //    method: "PUT",
+    //    headers: { "Content-Type": "application/json" },
+    //    body: JSON.stringify({
+    //      developmentPhase: myString,
+    //      brandingGuides: brandingGuides,
+    //      relevantBrandBook: relevantBrandBook ,
+    //      importance: importance,
+    //    }),
+    //  };
 
-     fetch(`http://localhost:8080/basicInfo/${id}/projectBrief`, requestOptions)
-       .then((response) => response.json())
-       .then((data) => {
-         console.log(data);
-         console.log(data.responsecode);
+    //  console.log(requestOptions);
 
-         window.location.href = "/branding?id=" + id;
-       })
-       .catch((err) => {
-         console.log(err.message);
-       });
+    //  fetch(
+    //    `https://nubeerobackend.onrender.com/basicInfo/${id}/projectBrief`,
+    //    requestOptions
+    //  )
+    //    .then((response) => response.json())
+    //    .then((data) => {
+    //      console.log(data);
+    //      console.log(data.responsecode);
+
+    //      window.location.href = "/branding?id=" + id;
+    //    })
+    //    .catch((err) => {
+    //      console.log(err.message);
+    //    });
    };
 
 

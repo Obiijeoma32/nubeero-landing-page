@@ -32,17 +32,16 @@ function Basic() {
         }),
       };
 
-      console.log(requestOptions);
+      // console.log(requestOptions);
       
-      fetch(`http://localhost:8080/basicInfo/`, requestOptions)
+      fetch(`https://nubeerobackend.onrender.com/basicInfo/`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-         
-        
-          window.location.href = "/onboarding?id="+data;
-          
+if (data != null){
 
+          window.location.href = "/onboarding?id=" + data.dataId;
+}
         })
         .catch((err) => {
           console.log(err.message);
